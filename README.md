@@ -10,6 +10,16 @@ TwinCircuit helps electronics manufacturers and independent test teams hand off 
 2. Factory A completes 40 of its assigned 60 before a simulated interruption. Transfer its 20 unstarted tests to factory B. The order keeps its original acceptance rule and completed records.
 3. Review the test batches and export the audit trail. The virtual exercise generates 800 vector results. The separate physical test bench recorded eight matching ESP32-S3 display-controller memory readbacks.
 
+## Run the full application locally
+
+Download and extract the [reviewer source snapshot](./TwinCircuit-review-app.zip). From the extracted folder, run the command below with Node.js 24.15 or newer. The website has no install-time dependencies.
+
+```sh
+node server.mjs
+```
+
+Open http://127.0.0.1:4173 and select the standalone demo workspace. The snapshot includes the server, browser code, field gateway, firmware source, escrow contract and regression tests. The local demo creates its own SQLite database and uses virtual suppliers. Large public illustrations, guide PDFs and prebuilt firmware can be restored with the included `node review-assets.mjs` command.
+
 ## Reproduce the TapeOut integration
 
 The application compiles digital acceptance rules to TapeOut-compatible NAND netlists. It reads a registered TapeOut processor on X Layer mainnet and compares each circuit output with local replay. TC-IC/0.1 defines a first-article readiness rule, two measurement dispositions and a process-license eligibility rule.
