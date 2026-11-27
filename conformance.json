@@ -1,0 +1,1346 @@
+{
+  "documentType": "TwinCircuit industrial rule conformance vectors",
+  "version": "TC-IC/0.1",
+  "digestScope": "SHA-256 of UTF-8 JSON.stringify(conformance) without indentation",
+  "conformanceSha256": "sha256:17a7b228db063af3d0e1262a316d9e2624cc0e597b8e9af8ebcb4d36d44bbe6d",
+  "profileCount": 4,
+  "vectorCount": 96,
+  "conformance": {
+    "version": "TC-IC/0.1",
+    "circuitFormat": "TapeOut TAP-02 NAND subset",
+    "bitOrder": "first input is bit 0 of the first packed byte",
+    "circuits": {
+      "firstArticle": {
+        "profile": {
+          "version": "TC-IC/0.1",
+          "name": "first-article-offer",
+          "expression": "D && B && C && V && R",
+          "inputOrder": [
+            "D",
+            "B",
+            "C",
+            "V",
+            "R"
+          ],
+          "inputMeanings": {
+            "D": "committed demand reaches the requested minimum",
+            "B": "committed budget covers the first-article cost",
+            "C": "a capable workstation has confirmed its offer",
+            "V": "an independent verifier has confirmed its role",
+            "R": "rights required to issue the offer are cleared"
+          },
+          "nIn": 5,
+          "nOut": 1,
+          "netlistHex": "0x000000020000030000000700000700000008000004000000090000090000000a0000050000000b00000b0000000c0000060000000d00000d",
+          "gateCount": 8,
+          "digestAlgorithm": "keccak256",
+          "digest": "0x3e8c6ba39c6c9672fa88c2a4586ed1e7a65e230f69c99dfd67e191f58125db1b"
+        },
+        "vectors": [
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x00",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x10",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x08",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x18",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x04",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x14",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0c",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1c",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x02",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x12",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x0a",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x1a",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x06",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x16",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0e",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1e",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x01",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x11",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x09",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x19",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x05",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x15",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0d",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1d",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x03",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x13",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x0b",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x1b",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x07",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x17",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0f",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1f",
+            "output": true,
+            "outputHex": "0x01"
+          }
+        ]
+      },
+      "acceptancePass": {
+        "profile": {
+          "version": "TC-IC/0.1",
+          "name": "cross-factory-accept",
+          "expression": "I && K && S && G",
+          "inputOrder": [
+            "I",
+            "K",
+            "S",
+            "G"
+          ],
+          "inputMeanings": {
+            "I": "workpiece identity is verified",
+            "K": "calibration is valid for this measurement",
+            "S": "the required measurement source is present",
+            "G": "the uncertainty interval is wholly inside the frozen tolerance"
+          },
+          "nIn": 4,
+          "nOut": 1,
+          "netlistHex": "0x00000002000003000000060000060000000700000400000008000008000000090000050000000a00000a",
+          "gateCount": 6,
+          "digestAlgorithm": "keccak256",
+          "digest": "0xbebae2a15fc4f9e384daf0b64f9e39fba72906c354b8dc89f26447a5c17771bf"
+        },
+        "vectors": [
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x00",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x08",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x04",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x0c",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x02",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x0a",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x06",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x0e",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x01",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x09",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x05",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x0d",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x03",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x0b",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x07",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x0f",
+            "output": true,
+            "outputHex": "0x01"
+          }
+        ]
+      },
+      "acceptanceReject": {
+        "profile": {
+          "version": "TC-IC/0.1",
+          "name": "cross-factory-reject",
+          "expression": "I && K && S && X",
+          "inputOrder": [
+            "I",
+            "K",
+            "S",
+            "X"
+          ],
+          "inputMeanings": {
+            "I": "workpiece identity is verified",
+            "K": "calibration is valid for this measurement",
+            "S": "the required measurement source is present",
+            "X": "the uncertainty interval is wholly outside the frozen tolerance"
+          },
+          "nIn": 4,
+          "nOut": 1,
+          "netlistHex": "0x00000002000003000000060000060000000700000400000008000008000000090000050000000a00000a",
+          "gateCount": 6,
+          "digestAlgorithm": "keccak256",
+          "digest": "0x09fe21ea93cad89a00c519ce63af45f2cc8945d17caf15e64ca86a7ea801cb63"
+        },
+        "vectors": [
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x00",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x08",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x04",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x0c",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x02",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x0a",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x06",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x0e",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x01",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x09",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x05",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x0d",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x03",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x0b",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x07",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x0f",
+            "output": true,
+            "outputHex": "0x01"
+          }
+        ]
+      },
+      "license": {
+        "profile": {
+          "version": "TC-IC/0.1",
+          "name": "licensed-industrial-use",
+          "expression": "A && P && T && Q && R",
+          "inputOrder": [
+            "A",
+            "P",
+            "T",
+            "Q",
+            "R"
+          ],
+          "inputMeanings": {
+            "A": "the declared licensee matches the grant",
+            "P": "the referenced process profile matches the grant",
+            "T": "the use occurred inside the grant time window",
+            "Q": "the requested quantity fits the remaining licensed units",
+            "R": "the use preceded revocation or no revocation exists"
+          },
+          "nIn": 5,
+          "nOut": 1,
+          "netlistHex": "0x000000020000030000000700000700000008000004000000090000090000000a0000050000000b00000b0000000c0000060000000d00000d",
+          "gateCount": 8,
+          "digestAlgorithm": "keccak256",
+          "digest": "0x1fc5946efb6d7db759889b3398318da4a07f4fda21076c54b3cbab7d200cf081"
+        },
+        "vectors": [
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x00",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x10",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x08",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x18",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x04",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x14",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0c",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              false,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1c",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x02",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x12",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x0a",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x1a",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x06",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x16",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0e",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              false,
+              true,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1e",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x01",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x11",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x09",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x19",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x05",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x15",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0d",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              false,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1d",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              false,
+              false
+            ],
+            "inputHex": "0x03",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              false,
+              true
+            ],
+            "inputHex": "0x13",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              true,
+              false
+            ],
+            "inputHex": "0x0b",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              false,
+              true,
+              true
+            ],
+            "inputHex": "0x1b",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              false,
+              false
+            ],
+            "inputHex": "0x07",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              false,
+              true
+            ],
+            "inputHex": "0x17",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              true,
+              false
+            ],
+            "inputHex": "0x0f",
+            "output": false,
+            "outputHex": "0x00"
+          },
+          {
+            "inputBits": [
+              true,
+              true,
+              true,
+              true,
+              true
+            ],
+            "inputHex": "0x1f",
+            "output": true,
+            "outputHex": "0x01"
+          }
+        ]
+      }
+    },
+    "typedExamples": {
+      "firstArticle": [
+        {
+          "input": {
+            "requiredDemandUnits": 30,
+            "committedDemandUnits": 29,
+            "requiredBudgetMinor": "1000",
+            "committedBudgetMinor": "1000",
+            "capabilityConfirmed": true,
+            "verifierConfirmed": true,
+            "rightsCleared": true
+          },
+          "decision": "pending"
+        },
+        {
+          "input": {
+            "requiredDemandUnits": 30,
+            "committedDemandUnits": 30,
+            "requiredBudgetMinor": "1000",
+            "committedBudgetMinor": "1000",
+            "capabilityConfirmed": true,
+            "verifierConfirmed": true,
+            "rightsCleared": true
+          },
+          "decision": "ready"
+        }
+      ],
+      "acceptance": [
+        {
+          "spec": {
+            "lowerMicrometers": 9900,
+            "upperMicrometers": 10100,
+            "requireIndependentMeasurement": true
+          },
+          "evidence": {
+            "measuredMicrometers": 10030,
+            "uncertaintyMicrometers": 20,
+            "unitId": "piece-1",
+            "calibrationValid": true,
+            "identityVerified": true,
+            "independentMeasurement": true
+          },
+          "decision": "accept"
+        },
+        {
+          "spec": {
+            "lowerMicrometers": 9900,
+            "upperMicrometers": 10100,
+            "requireIndependentMeasurement": true
+          },
+          "evidence": {
+            "measuredMicrometers": 10090,
+            "uncertaintyMicrometers": 30,
+            "unitId": "piece-2",
+            "calibrationValid": true,
+            "identityVerified": true,
+            "independentMeasurement": true
+          },
+          "decision": "review"
+        },
+        {
+          "spec": {
+            "lowerMicrometers": 9900,
+            "upperMicrometers": 10100,
+            "requireIndependentMeasurement": true
+          },
+          "evidence": {
+            "measuredMicrometers": 10150,
+            "uncertaintyMicrometers": 20,
+            "unitId": "piece-3",
+            "calibrationValid": true,
+            "identityVerified": true,
+            "independentMeasurement": true
+          },
+          "decision": "reject"
+        }
+      ],
+      "license": [
+        {
+          "grant": {
+            "validFrom": "2026-01-01T00:00:00Z",
+            "validUntil": "2027-01-01T00:00:00Z",
+            "rateMinor": "25",
+            "maxUnits": 100,
+            "usedUnits": 40,
+            "licenseeId": "shop-a",
+            "profileDigest": "rule-1"
+          },
+          "use": {
+            "occurredAt": "2026-11-19T12:00:00Z",
+            "licenseeId": "shop-a",
+            "profileDigest": "rule-1",
+            "quantity": 3
+          },
+          "decision": "payable",
+          "feeMinor": "75"
+        }
+      ]
+    }
+  }
+}
